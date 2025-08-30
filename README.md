@@ -77,7 +77,6 @@ Recipe-app-mobile
 | -------- | ---- |
 | Android  | Latest APK (GitHub → Releases) |
 | Expo Go  | Scan QR shown after `npx expo start` |
-| Web (optional) | <https://recipe-finder.vercel.app> |
 
 Backend health-check:  
 `https://recipe-finder-api.onrender.com/api/health`
