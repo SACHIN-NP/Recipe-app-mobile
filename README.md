@@ -1,50 +1,96 @@
-# Welcome to your Expo app 👋
+<h1 align="center">🍽️ Recipe Finder – React Native Mobile App 🍽️</h1>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<p align="center">
+  <img src="assets/images/screenshot-for-readme.png" alt="App demo" width="300" />
+</p>
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Highlights
 
-   ```bash
-   npm install
-   ```
+- 🔐 Signup, Login & 6-digit email verification with **Clerk**
+- 🍳 Browse featured recipes & filter by categories
+- 🔍 Real-time search with debounced queries
+- 🎥 Recipe detail pages embed YouTube tutorials
+- ❤️ Add / remove favorites (persisted via backend API)
+- 🌈 8 ready-made color themes
+- ⚡ Tech stack React Native • Expo • Express • PostgreSQL
+- 🔗 Data source [TheMealDB](https://www.themealdb.com/) (free tier)
+- 🆓 100 % free services – no paid tiers required
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🔗 Related Repositories
 
-In the output, you'll find options to open the app in a
+| Layer      | Repository |
+| ---------- | ---------- |
+| Backend API | <https://github.com/SACHIN-NP/Recipe-finder-api> (Express + PostgreSQL) |
+| Mobile App | **this repo** |
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🧪 Environment Variables
 
-## Get a fresh project
+Create a `.env` file in the project root:
 
-When you're ready, run:
-
+##Recipe-app-mobile
 ```bash
-npm run reset-project
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+API_URL=https://recipe-finder-api.onrender.com/api
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🚀 Quick Start
+| Step | Command |
+| ---- | ------- |
+| Install deps | `npm install` |
+| Run Expo dev server | `npx expo start` |
+| Cloud Android build | `eas build --platform android` |
+| Local APK build | `eas build --platform android --local --output app.apk` |
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🔧 Run the Backend
 
-## Join the community
+```bash
+cd backend
+npm install
+npm run dev
+```
 
-Join our community of developers creating universal apps.
+## 📂 Project Structure
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Recipe-app-mobile
+├── app/ # Expo Router pages
+├── components/ # Reusable UI
+├── constants/ # Themes, images
+├── hooks/ # Custom hooks
+├── services/ # API helpers
+└── assets/images/… # Screenshots, icons
+
+
+---
+
+## 📲 Try It Now
+| Platform | Link |
+| -------- | ---- |
+| Android  | Latest APK (GitHub → Releases) |
+| Expo Go  | Scan QR shown after `npx expo start` |
+| Web (optional) | <https://recipe-finder.vercel.app> |
+
+Backend health-check:  
+`https://recipe-finder-api.onrender.com/api/health`
+
+---
+
+## 🤝 Contributing
+1. Fork → create branch  
+2. `npm run lint` before commit  
+3. Open PR 🎉
+
+---
+
+
+-- free to use, modify, share.
+
