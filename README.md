@@ -1,8 +1,5 @@
 <h1 align="center">🍽️ Recipe Finder – React Native Mobile App 🍽️</h1>
 
-<p align="center">
-  <img src="assets/images/screenshot-for-readme.png" alt="App demo" width="300" />
-</p>
 
 ---
 
@@ -24,7 +21,7 @@
 
 | Layer      | Repository |
 | ---------- | ---------- |
-| Backend API | <https://github.com/SACHIN-NP/Recipe-finder-api> (Express + PostgreSQL) |
+| Backend API | Your API (Express + PostgreSQL) |
 | Mobile App | **this repo** |
 
 ---
@@ -59,27 +56,16 @@ npm install
 npm run dev
 ```
 
-## 📂 Project Structure
-
-Recipe-app-mobile
-├── app/ # Expo Router pages
-├── components/ # Reusable UI
-├── constants/ # Themes, images
-├── hooks/ # Custom hooks
-├── services/ # API helpers
-└── assets/images/… # Screenshots, icons
-
 
 ---
 
 ## 📲 Try It Now
 | Platform | Link |
 | -------- | ---- |
-| Android  | Latest APK (GitHub → Releases) |
 | Expo Go  | Scan QR shown after `npx expo start` |
 
 Backend health-check:  
-`https://recipe-finder-api.onrender.com/api/health`
+`https://your-recipe-finder-api.onrender.com/api/health`
 
 ---
 
